@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      xmlns="http://www.w3.org/1999/html">
+<div style="text-align:center">
+ <mat-toolbar color="primary">
+   <h1>
+     {{ title }}
+   </h1>
+ </mat-toolbar>
+</div>
+<div>
+  <br /> <br />
+
+Podaj liczbę:
+<input [(ngModel)]="liczba" placeholder="liczba">
+  <button (click)="Losuj()" type="button" class="btn btn-success" >Losuj</button>
+  <button (click)="Wylycz()" class="btn btn-success">Wylycz</button>
+  <br />
+  Wylosowane liczby to:
+
+
+      <span class="mat-badge">{{listas}}</span>
+
+  <br />
+
+
+
+Srednia liczb to:
+
+
+      <span class="mat-badge">{{lyczbys}}</span>
+
+</div>
+<app-lyczydlo-list></app-lyczydlo-list>
